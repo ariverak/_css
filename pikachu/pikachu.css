@@ -1,0 +1,49 @@
+:root {
+    --background-size: 500px;
+    --box-size: calc(var(--background-size) / 2);
+    --skin-color : #F8D323;
+}
+.main {
+    display: grid;
+    grid-template-rows : 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+.background {
+    width : var(--background-size );
+    height : var(--background-size );
+}
+.box1 {
+    outline: dotted 1px gray;
+}
+.box2 {
+    outline: dotted 1px gray;
+}
+.box3 {
+    outline: dotted 1px gray;
+}
+.box4 { 
+    outline: dotted 1px gray;
+}
+
+.ear {
+    position : relative;
+    overflow: hidden;
+    height : var(--box-size);
+    border : 1px solid black;
+    border-top-right-radius: 400px;
+    border-bottom-left-radius: 400px;
+    background-color: var(--skin-color);
+}
+.ear .tip {
+    background-color: black;
+    width: 30%;
+    height: 30%;
+    border-bottom-right-radius:200px;
+}
+
+.box1 .ear {
+
+}
+.box2 .ear {
+    transform: rotate(90deg);
+}
