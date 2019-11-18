@@ -1,0 +1,70 @@
+
+.main-container{
+  width: 800px;
+  height: 600px;
+  background: lightgrey;
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 50% 50%;
+}
+.first-chunk{
+  width: 100%;
+  height: 300px;
+}
+.first-chunk .line{
+  display: flex;
+  margin: 0 20px 0 auto;
+  -ms-flex-align: end;
+  width: 60%;
+  height: 300px;
+  border-radius: 5px 250px 5px;
+  background: #c5a068;
+  transform: rotateX(-50deg);
+  z-index: 0;
+}
+.first-chunk .inner-ear{
+  display: flex;
+  margin: 46px 20px 20px auto;
+  -ms-flex-align: end;
+  width: 70%;
+  height: 250px;
+  border-radius: 3px 500px 3px;
+  background: 	#51280c;
+  transform: rotateX(-40deg);
+  z-index: 1;
+}
+
+.second-chunk{
+  width: 100%;
+  height: 300px;
+}
+.second-chunk .line{
+  display: flex;
+  margin: 0 auto 0 20px;
+  -ms-flex-align: end;
+  width: 60%;
+  height: 300px;
+  border-radius: 250px 5px;
+  background: #c5a068;
+  transform: rotateX(-50deg);
+  z-index: 0;
+}
+.second-chunk .inner-ear{
+  display: flex;
+  margin: 46px auto 20px 20px;
+  -ms-flex-align: end;
+  width: 70%;
+  height: 250px;
+  border-radius: 500px 3px;
+  background: 	#51280c;
+  transform: rotateX(-40deg);
+  z-index: 1;
+}
+.third-chunk{
+  width: 100%;
+  height: 300px;
+}
+.fourth-chunk{
+  width: 100%;
+  height: 300px;
+}
