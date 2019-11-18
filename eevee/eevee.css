@@ -13,7 +13,7 @@
 }
 .first-chunk .line{
   display: flex;
-  margin: 0 20px 0 auto;
+  margin: 0 110px 0 auto;
   -ms-flex-align: end;
   width: 60%;
   height: 300px;
@@ -40,7 +40,7 @@
 }
 .second-chunk .line{
   display: flex;
-  margin: 0 auto 0 20px;
+  margin: 0 auto 0 110px;
   -ms-flex-align: end;
   width: 60%;
   height: 300px;
@@ -64,7 +64,96 @@
   width: 100%;
   height: 300px;
 }
+.third-chunk .face-outer{
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 50% 50%;
+  margin: 0;
+  margin-left: 55%;
+  margin-top: -100px;
+  width: 90%;
+  height: 300px;
+  border-radius: 150px 150px 80px 80px; 
+  background: #c5a068;
+  z-index: 0;
+}
+.third-chunk .face-outer .right-eye{
+  margin: 0 auto;
+  margin-top: 50%;
+  height: 90%;
+  width: 50%;
+  border-radius: 50% ; 
+  background: #201303;
+}
+.third-chunk .face-outer .left-eye{
+  margin: 0 auto;
+  margin-top: 50%;
+  height: 90%;
+  width: 50%;
+  border-radius: 50%; 
+  background: #201303;
+}
+.third-chunk .face-outer .right-eye .reflect-eye{
+  margin: 0;
+  margin-left: 46%;
+  margin-top: 20%;
+  height: 60px;
+  width: 40px;
+  border-radius: 50% ; 
+  background: #ffffff;
+}
+.third-chunk .face-outer .left-eye .reflect-eye {
+  margin: 0;
+  margin-left: 10%;
+  margin-top: 20%;
+  height: 60px;
+  width: 40px;
+  border-radius: 50% ; 
+  background: #ffffff;
+}
+.third-chunk .face-outer .right-eye .reflect-eye .eyebrow-right{
+  width:40%;
+  height:20px;
+  margin: 0;
+  margin-top: 5%;
+  margin-left: 90%;
+  border:solid 5px #000;
+  border-color: transparent #000 transparent transparent;
+  border-radius: 50% 50%;
+}
+.third-chunk .face-outer .left-eye .reflect-eye .eyebrow-left{
+  height:40%;
+  width:20px;
+  margin: 0;
+  margin-top: 5%;
+  margin-left: -80%;
+  border:solid 5px #000;  
+  border-color: transparent transparent transparent #000;
+  border-radius: 50% 50%;
+}
 .fourth-chunk{
   width: 100%;
   height: 300px;
+}
+.fourth-chunk .line{
+  width: 100%;
+  height: 100%;
+}
+.fourth-chunk .line .mouth{
+  width:25%;
+  height:100px;
+  margin: 0;
+  margin-top: 10%;
+  margin-left: -15%;
+  border:solid 5px #000;
+  border-color: transparent transparent #000 transparent;
+  border-radius: 50%/100px 100px;
+}
+.fourth-chunk .line .mouth .nose{
+  width: 17%;
+  height: 15%;
+  margin: 0 auto;
+  margin-top: 70%;
+  border-radius: 50% 50% 95% 95%;
+  background: #51280c;
 }
