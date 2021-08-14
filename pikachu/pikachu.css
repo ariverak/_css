@@ -11,25 +11,19 @@
 .background {
     width : var(--background-size );
     height : var(--background-size );
+    position: relative;
 }
-.box1 {
-    outline: dotted 1px gray;
+.relative {
+    position: relative;
 }
-.box2 {
-    outline: dotted 1px gray;
-}
-.box3 {
-    outline: dotted 1px gray;
-}
-.box4 { 
-    outline: dotted 1px gray;
+.box {
+    z-index: 1;
 }
 
 .ear {
     position : relative;
     overflow: hidden;
     height : var(--box-size);
-    border : 1px solid black;
     border-top-right-radius: 400px;
     border-bottom-left-radius: 400px;
     background-color: var(--skin-color);
@@ -46,4 +40,75 @@
 }
 .box2 .ear {
     transform: rotate(90deg);
+}
+
+.face {
+    position: absolute;
+    width: 65%;
+    height: 65%;
+    background-color: var(--skin-color);
+    border-radius: 50%;
+    border-top-left-radius: 45%;
+    border-top-right-radius: 45%;
+    top: 30%;
+    left: 18%;
+    overflow: hidden;
+}
+
+.face .face-eyes-zone {
+    margin-top: 130px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    position: relative;
+}
+
+.face .face-eyes-zone .eye {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.face .face-eyes-zone .eye .reflect-eye {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 20px;
+}
+
+.face .face-mouth-zone {
+    margin-top: 40px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+}
+
+.face .face-mouth-zone .mouth-zone {
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.mouth-zone .mouth-part {
+    width: 65px;
+    height: 30px;
+    border: solid 3px #000;
+    border-color:  transparent transparent #000;
+    border-radius: 50%;
+}
+
+.mouth-zone .mouth-part:first-child {
+    margin-right: -19px;
+}
+
+.side-face {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #FE3310;
 }
